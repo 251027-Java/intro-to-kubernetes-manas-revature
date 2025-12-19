@@ -56,8 +56,8 @@ kubectl describe deployment web-app
 ```
 
 **Questions**:
-1. How many pods were created?
-2. What is the pod naming pattern?
+1. How many pods were created? **A: 2 pods, because we set replicas to be 2**
+2. What is the pod naming pattern? **A: The pods started with web-app because we set that as the label in the template. They are followed by a string that seems to be a pod id, and then a string that is the replica id.**
 
 ### Task 3: Create a Service
 Create `service.yaml` to expose the deployment:
